@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before{
+  margin:0;
+  padding:0;
+  box-sizing:content-box;
+}
+
+#container{
+  display: grid;
+  grid-template-columns: 1fr/3fr;
+  gap: 5px;
+  padding: 10px;
+  position: relative;
+  width: 886px;
+  height: 655px;
+  background: #FFFFFF;
+}
+#item1{
+  grid-column: 1/3;
+  background-color: #F20519;
+}
+#item2{
+  grid-row: 2/4;
+  background-color: #F28705;
+}
+.txt-principal{
+  font-family: Oswald;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  background: rgba(166, 3, 3, 1);
+}
+.imagem{
+  left: 4px;
+  top: 318px;
+}
+.txt-menor{
+  color: #FFFFFF;
+  font-family: Roboto;
+  text-align:center;
+  
+}
+.txt{
+  color: rgba(17, 1, 1, 1);
+  font-family: Roboto;
+  text-align: center;
+}
+#item3{
+  background-color: #FFFFFF;
+  margin: 5px #FFFFFF;
+  text-align: center;
+}
+#item4{
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+#item4 > a{
+  color: #F28705;
+  padding: 9px 19px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgba(17, 1, 1, 1);
+  box-shadow: 0 4px 1px rgb(56, 1, 1);
+  border-radius: 10px
+ }
+ #item4 > a:hover{
+   background-color: rgba(166, 3, 3, 1);
+   box-shadow: 0 4px 1px rgb(85, 3, 3);
+ }
+ #item4 > p{
+   margin: 40px 10px 3rem;
+ }
